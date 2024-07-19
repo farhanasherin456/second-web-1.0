@@ -1,0 +1,1319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "syne", sans-serif;
+}
+
+
+
+
+header {
+    background: #F2EFEF;
+    background-image: url(https://template-kit.rootlayers.com/portosia/wp-content/uploads/sites/4/2020/10/line-group-1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    padding-top: 2.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+    margin-right: 2rem;
+}
+
+nav ul a {
+    color: #606060;
+}
+
+nav ul a:hover {
+    color: #41B883;
+    transition: 0.6s ease;
+}
+
+.logo a {
+    color: black;
+}
+
+.hire-btn {
+    width: 140px;
+    height: 45px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    gap: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #27C981;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #41B883;
+    font-size: 16px;
+}
+
+.text-profile {
+    margin-left: 8rem;
+    margin-bottom: 8rem;
+}
+
+.line span {
+    border-bottom: 2.5px solid #41B883;
+    width: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.text-profile h1 {
+    color: #41B883;
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.contact-btn {
+    background: #27C981;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-top: 3rem;
+}
+
+.img-profile {
+    display: flex;
+    margin-right: 8rem;
+}
+
+.left-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.js img {
+    margin-left: -59px;
+}
+
+.v-icon img {
+    margin-right: 1px;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-2 {
+    margin-left: 50px;
+    margin-top: -400px;
+    width: 300px;
+    height: 500px;
+}
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.react img {
+    margin-right: -27px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hire-btn {
+        display: none;
+    }
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .text-profile {
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .text-profile h1 {
+        font-size: 50px;
+    }
+
+    .profile {
+        flex-direction: column;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .img-profile {
+        margin-right: 0;
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .img-2 {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hire-btn {
+        display: none;
+    }
+    .top-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hire-btn {
+        width: 120px;
+        height: 40px;
+    }
+
+    .text-profile {
+        margin: 0;
+        text-align: center;
+    }
+
+    .text-profile h1 {
+        font-size: 40px;
+    }
+
+    .contact-btn {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .img-profile {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-2 {
+        width: 200px;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hire-btn {
+        display: none;
+    }
+    .top-header {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .hire-btn {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .text-profile h1 {
+        font-size: 30px;
+    }
+
+    .contact-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-2 {
+        width: 150px;
+        height: 274px;
+        margin-left: 25px;
+        margin-top: -186px;
+    
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    background: #F2EFEF;
+    background-image: url(https://template-kit.rootlayers.com/portosia/wp-content/uploads/sites/4/2020/10/bg-header-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 8rem;
+}
+
+.text-about {
+    padding: 1rem;
+    width: 50%;
+}
+
+.text-about h3 {
+    color: #41B883;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.text-about h2 {
+    color: black;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+.text-about p {
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: left;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablet devices (portrait and landscape) */
+@media (max-width: 1024px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        margin: 2rem;
+    }
+    
+    .about {
+        padding: 6rem;
+        height: auto;
+        background-position: top right;
+    }
+    
+    .text-about {
+        width: 80%;
+    }
+    
+    .text-about h2 {
+        font-size: 36px;
+    }
+    
+    .text-about p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .skills {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .about {
+        padding: 4rem;
+        background-position: center center;
+        height: auto;
+        background-image: none; /* Optionally remove background image on mobile */
+    }
+    
+    .text-about {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text-about h2 {
+        font-size: 28px;
+    }
+    
+    .text-about p {
+        font-size: 12px;
+    }
+}
+
+
+.icon-skill {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 50%;
+}
+.icon-skill svg {
+    width: 100px;
+    height: 100px;
+}
+.skill-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.skill-details article {
+    padding: 2rem;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-details article h3 {
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+.skill-details article p {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+.service-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.service-text h3 {
+    color: #41B883;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.service-text h2 {
+    color: black;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.service-text p {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: center;
+    
+}
+.img-div {
+    display: flex;
+    
+}
+.div-img {
+    padding:1rem;
+}
+.dot-img{
+    width: 400px;
+}
+.dot-img img {
+    margin-bottom: -164px;
+}
+.main-img {
+    width: 500px;
+}
+.main-img img {
+    margin-left: 53px;
+    width: 100%;
+    border-radius: 50px;
+   
+}
+.rect-img img {
+    margin-left: 490px;
+    margin-top: -101px;
+}  
+.text-div {
+    width: 50%;
+    height: 50%;
+    padding: 2rem;
+}
+.text-div h2 {
+    color: black;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3em;
+    font-family: "Poppins", Sans-serif;
+    margin-top: 1rem;
+}
+.text-div p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.box {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: #E7E7E7 0px 2px 8px 0px;
+}
+.box:hover {
+    box-shadow:  #E7E7E7 0px 54px 55px,  #E7E7E7 0px -12px 30px,  #E7E7E7 0px 4px 6px,  #E7E7E7 0px 12px 13px,  #E7E7E7 0px -3px 5px;
+    transition: 0.2s ease;
+}
+.box-img {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 50%;    
+}
+.box-img svg {
+    width: 50px;
+    height: 50px;
+} 
+.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.box-text h3 {
+    font-size: 20px;
+    font-family: "Poppins", Sans-serif;
+}
+.box-text h4 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .service-text h2 {
+      font-size: 2em;
+    }
+
+    .service-text p {
+      font-size: 1em;
+    }
+
+    .skill-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .service-text h3 {
+      font-size: 1.5em;
+    }
+
+    .service-text h2 {
+      font-size: 1.8em;
+    }
+
+    .service-text p {
+      font-size: 0.9em;
+    }
+
+    .skill-details article {
+      flex: 1 1 90%;
+    }
+
+    .icon-skill {
+      padding: 15px;
+    }
+
+    .skill-details h3 {
+      font-size: 1.2em;
+    }
+
+    .skill-details p {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .service-text h3 {
+      font-size: 1.2em;
+    }
+
+    .service-text h2 {
+      font-size: 1.5em;
+    }
+
+    .service-text p {
+      font-size: 0.8em;
+    }
+
+    .skill-details article {
+      flex: 1 1 100%;
+    }
+
+    .icon-skill {
+      padding: 10px;
+    }
+
+    .skill-details h3 {
+      font-size: 1em;
+    }
+
+    .skill-details p {
+      font-size: 0.8em;
+    }
+  }
+  
+
+  
+  .contacts {
+    width: 100%;
+    height: min-content;
+    background: #F2EFEF;
+    background-image: url(https://template-kit.rootlayers.com/portosia/wp-content/uploads/sites/4/2020/10/bg-header-1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 3rem;
+    padding-left: 2rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.left-contacts {
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    width: 50%;
+    background: #F2EFEF;
+    background-image: url(https://template-kit.rootlayers.com/portosia/wp-content/uploads/sites/4/2020/10/bg-header-1.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding and margin are included in width */
+}
+
+.left-contacts span {
+    color: #41B883;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.left-contacts h2 {
+    color: black;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 1.3em;
+    font-family: "Poppins", Sans-serif;
+    margin-top: 1rem;
+}
+
+.left-contacts p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .left-contacts {
+        width: 60%;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .left-contacts h2 {
+        font-size: 42px;
+    }
+    
+    .left-contacts p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contacts {
+        padding: 2rem;
+    }
+    
+    .left-contacts {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    
+    .left-contacts h2 {
+        font-size: 32px;
+    }
+    
+    .left-contacts p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        padding: 1rem;
+    }
+    
+    .left-contacts {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .left-contacts h2 {
+        font-size: 24px;
+    }
+    
+    .left-contacts p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts {
+        padding: 0.5rem;
+    }
+    
+    .left-contacts {
+        padding: 0.5rem;
+    }
+    
+    .left-contacts h2 {
+        font-size: 20px;
+    }
+    
+    .left-contacts p {
+        font-size: 8px;
+    }
+}
+
+.sec-contact {
+    padding: 8rem;
+    width: 100%;
+    height: min min-content;
+}
+.text-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    gap: 4rem;
+
+}
+.left-text h2 {
+    color: black;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3em;
+    font-family: "Poppins", Sans-serif;
+    margin-top: 1rem;
+}
+.left-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Poppins", Sans-serif;
+    color: #585858;
+    text-align: left;
+    margin-top: 1rem;
+}
+.contact-icons{
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.box-contact {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    padding: 1rem;
+    background: #F2F7FB;
+    border-radius: 15px;
+}
+.conctact-img {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.box-contact h4 {
+    color: black;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+}
+.right-form {
+    width: 50%;
+    height: 50%;
+    padding: 3rem;
+}
+.right-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.input {
+    display: inline-block;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background: #F6F6F6;
+    font-size: 16px;
+    font-family: "Poppins", Sans-serif;
+
+
+}
+
+.right-form form textarea {
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: #F6F6F6;
+    padding: 0.5rem;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 1rem;
+
+}
+.talk-btn {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    font-family: "Poppins", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    height: 70px;
+    background: #41B883;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* Base styles */
+.sec-contact {
+    padding: 2rem;
+}
+
+.text-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-text, .right-form {
+    width: 100%;
+}
+
+.left-text h2 {
+    font-size: 2rem;
+}
+
+.left-text p {
+    font-size: 1rem;
+}
+
+.right-form {
+    padding: 2rem;
+}
+
+/* Mobile devices (phones, 480px and up) */
+@media (max-width: 767px) {
+    .text-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .right-form form {
+        width: 100%;
+    }
+
+    .input, .right-form form textarea {
+        font-size: 14px;
+    }
+
+    .talk-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 14px;
+    }
+
+    .left-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .left-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text-contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-text, .right-form {
+        width: 48%;
+    }
+
+    .right-form {
+        padding: 2rem;
+    }
+
+    .input, .right-form form textarea {
+        font-size: 15px;
+    }
+
+    .talk-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 15px;
+    }
+
+    .left-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .left-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Laptop devices (1024px and up) */
+@media (min-width: 1024px) {
+    .text-contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-text, .right-form {
+        width: 48%;
+    }
+
+    .right-form {
+        padding: 3rem;
+    }
+
+    .input, .right-form form textarea {
+        font-size: 16px;
+    }
+
+    .talk-btn {
+        width: 200px;
+        padding: 1rem 3rem;
+        font-size: 16px;
+    }
+
+    .left-text h2 {
+        font-size: 2rem;
+    }
+
+    .left-text p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+.card-sec {
+    width: 100%;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #41B883;
+    width: 90%;
+    height: 70vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 50px;
+    background-image: url(https://template-kit.rootlayers.com/portosia/wp-content/uploads/sites/4/2020/10/circle-big-1.png);
+    background-repeat: no-repeat;
+    background-position: 778px 240px;
+}
+
+.card h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+/* Media Queries */
+
+/* For tablets and larger mobile devices */
+@media (max-width: 1024px) {
+    .card-sec {
+        padding: 6rem;
+    }
+
+    .card {
+        height: 60vh;
+    }
+
+    .card h2 {
+        font-size: 48px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .card-sec {
+        padding: 4rem;
+    }
+
+    .card {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .card h2 {
+        font-size: 36px;
+    }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 480px) {
+    .card-sec {
+        padding: 2rem;
+    }
+
+    .card {
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .card h2 {
+        font-size: 28px;
+    }
+}
+
+/* Base styles */
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-family: "Poppins", Sans-serif;
+}
+
+.footer h3 {
+    color: #AEAFAE;
+}
+
+.div-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-icons {
+    border: 2px solid #41B883;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons:hover {
+    background: #41B883;
+}
+
+.social-icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons svg:hover {
+    fill: white;
+    transition: 0.8s ease;
+}
+
+.footer span {
+    font-size: 14px;
+    color: #AEAFAE;
+}
+
+/* Media Queries */
+
+/* Tablet screens (min-width: 600px and max-width: 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .footer h2 {
+        font-size: 24px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .social-icons svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer span {
+        font-size: 16px;
+    }
+}
+
+/* Laptop screens (min-width: 900px and max-width: 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+
+    .social-icons svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer span {
+        font-size: 18px;
+    }
+}
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .footer h2 {
+        font-size: 32px;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+    }
+
+    .social-icons svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    .footer span {
+        font-size: 20px;
+    }
+}
+
+.card-btn {
+    border:1px solid  white;
+    border-radius: 12px;
+    background: white;
+    width: 200px;
+    height: 50px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-btn a {
+   text-decoration: none;
+   color: #41B883;
+}
+.text-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.name_error {
+    color: black;
+}
+.email_error {
+    color:red;
+    font-size: small;
+}
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .top-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  
+    .profile {
+      padding: 1rem;
+    }
+  
+    .text-profile h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo a {
+      font-size: 1.2rem;
+    }
+  
+    .hire-btn, .contact-btn {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .profile {
+      padding: 0.5rem;
+    }
+  
+    .text-profile h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
